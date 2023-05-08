@@ -60,7 +60,7 @@
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
       >;
-      sensor-bindings = <&inc_dec_kp BT_PREV BT_NXT>;
+      sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
     };
   };
 };
