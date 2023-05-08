@@ -5,7 +5,9 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
-  zmk,matrix_transform = &all_1u_transform;
+  chosen {
+    zmk,matrix_transform = &all_1u_transform;
+  };
   
   keymap {
     compatible = "zmk,keymap";
@@ -22,7 +24,7 @@
         &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  &kp BSLH
         &kp ESC  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT  &kp RET
         &mt LSHIFT LEFT_PARENTHESIS  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT RIGHT_PARENTHESIS  &kp UP  &mo 1
-        &kp LCTRL  &kp LALT  &·kp LGUI  &kp SPACE  &kp RGUI  &kp RALT  &kp LEFT  &kp DOWN  &kp RIGHT
+        &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE  &kp RGUI  &kp RALT  &kp LEFT  &kp DOWN  &kp RIGHT
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
